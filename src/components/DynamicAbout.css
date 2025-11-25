@@ -1,0 +1,14 @@
+.dynamicAboutSection{
+    /* width: 20rem; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 20rem 20rem;
+    
+}
+
+.dynamicAboutSection > p{
+    font-size: 3.5rem;
+    font-weight: bold;
+}

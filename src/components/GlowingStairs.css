@@ -1,0 +1,56 @@
+.glowingStairs {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15rem;
+    align-items: center;
+}
+
+.glowingStair {
+    height: 3px;
+    background-color: var(--line-div-color);
+    margin: 3rem 0 0 0;
+
+    animation: singleDarkStep 4s ease-in infinite;
+}
+
+/* Start at 50% and decrease by ~7% per step */
+.glowingStairs> :nth-child(1) {
+    animation-delay: 0.0s;
+    width: 60%;
+}
+
+.glowingStairs> :nth-child(2) {
+    animation-delay: 0.3s;
+    width: 38%;
+}
+
+.glowingStairs> :nth-child(3) {
+    animation-delay: 0.6s;
+    width: 28%;
+}
+
+.glowingStairs> :nth-child(4) {
+    animation-delay: 0.9s;
+    width: 18%;
+}
+
+.glowingStairs> :nth-child(5) {
+    animation-delay: 1.2s;
+    width: 11%;
+}
+
+.glowingStairs> :nth-child(6) {
+    animation-delay: 1.5s;
+    width: 7%;
+}
+
+.glowingStairs> :nth-child(7) {
+    animation-delay: 1.8s;
+    width: 4%;
+}
+
+@keyframes singleDarkStep {
+    0%, 100% { opacity: 1; }
+    7%       { opacity: 0.1; box-shadow: none; } /* Peak darkness */
+    14%      { opacity: 1; }
+}
