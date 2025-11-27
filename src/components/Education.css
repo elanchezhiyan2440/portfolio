@@ -1,0 +1,140 @@
+section#EducationSection{
+    margin-top: 10rem;
+    position: relative;
+}
+
+.educationTiles{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem auto 0 auto;
+}
+
+.smallerText{
+    font-size: 1.5rem;
+}
+
+#educationMiddleLine{
+    margin: 12.5rem auto 0 auto;
+    z-index: 0;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: var(--line-div-color);
+}
+
+.educationBox{
+    background-color: var(--education-tile-bg);
+    height: 200px;
+    max-height: 200px;
+    width: 250px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+    top: 10px;
+}
+
+.educationBoxLeftAlign, .educationBoxRightAlign, .educationDateLeftAlign, .educationBoxRightAlign{
+    opacity: 0;
+    transition: transform 1s ease, opacity .75s ease;
+}
+
+.educationBoxLeftAlign{
+    left: -190px;
+    top: -50px;
+    transform: translateX(-100%);
+}
+
+.educationBoxRightAlign{
+    left: 190px;
+    top: -50px;
+    transform: translateX(100%);
+}
+
+.educationDateRightAlign, .educationDateLeftAlign{
+    transition: transform 1s ease, opacity .75s ease;
+}
+
+.educationDateRightAlign{
+    transform: translateX(400%);
+    opacity: 0;
+    right: -100px;
+    top: 42.5px;
+}
+
+.educationDateLeftAlign{
+    transform: translateX(-400%);
+    opacity: 0;
+    right: 100px;
+    top: 42.5px;
+}
+
+.jumpFromLeft, .jumpFromRight{
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+.eduSchoolName, .eduSchoolLocation, .eduSchoolRole{
+    margin: 0;
+    font-weight: bold;
+}
+
+.eduSchoolMarks{
+    font-weight: bold;
+    margin: 15px 0 10px 0;
+}
+
+.eduSchoolDesc{
+    font-weight: bold;
+    opacity: 0.75;
+}
+
+.educationDate{
+    font-weight: bold;
+    position: relative;
+}
+
+.WhiteCircle{
+    position: relative;
+}
+
+.WhiteCircleRing{
+    height: 25px;
+    width: 25px;
+    /* background-color: var(--text-color); */
+    border-radius: 50%;
+    border-color: var(--text-color);
+    border: 5px solid;
+}
+
+.WhiteCircle>img{
+    height: 10px;
+    width: auto;
+    position: absolute;
+}
+
+.leftArrowWhiteCircle{
+    top: 11px;
+    left: -7px;
+    transform: scaleX(-1);
+}
+
+.rightArrowWhiteCircle{
+    top: 11px;
+    right: -7px;
+}
+
+/* for box px*/
+/* left -185 */
+/* top -50 */
+
+/* for text  px*/
+/* right-100 */
+/* top 40 */

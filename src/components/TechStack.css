@@ -1,0 +1,48 @@
+.techStack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.techStackText{
+    margin: 6rem 0 0 0;
+    line-height: 1;
+    overflow: visible;
+    /* transform: translateY(60%); */
+    /* opacity: 0; */
+}
+
+
+.customInfToolTip {
+    height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--tech-mouse-hover-circle-text);
+    background-color: var(--tech-mouse-hover-circle);
+    font-weight: 700;
+    width: 150px;
+    border-radius: 50%;
+    z-index: 99;
+    pointer-events: none;
+    position: fixed;
+    mix-blend-mode: exclusion;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.singleTechIcon {
+    margin: 0 3rem 3rem 3rem;
+}
+
+.singleTechIcon>img {
+    height: auto;
+    width: 90px;
+}
+
+@keyframes hideDownAndPopUp {
+    100% {transform: translateY(0%); opacity: 1;}
+}

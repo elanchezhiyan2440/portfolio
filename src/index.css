@@ -1,14 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass+Mono:wght@300..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --bg-color: #121212;
+  --bg-color: #0F172A;
   --text-color: #e0e0e0;
   --line-div-color: #99999975;
+  --mouse-hover-circle: linear-gradient(to right, #ff003c, #f10000);
+  --tech-mouse-hover-circle: #e8d0b3;
+  --tech-mouse-hover-circle-text: black;
+  --project-tile-bg: #1f1f1f;
+  --education-tile-bg:#1B2235;
 }
 
 :root[data-theme="light"] {
   --bg-color: #e0e0e0;
   --text-color: #121212;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 body {

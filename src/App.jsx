@@ -1,18 +1,17 @@
-import { useState } from 'react'
-import Intro from './components/Intro'
+
 import Header from './components/Header'
 import IntroBragTextSection from './components/IntroBragTextSection'
 import DynamicAbout from './components/DynamicAbout'
+import TechStack from './components/TechStack'
+import Projects from './components/Projects'
+import Education from './components/Education'
+import ContactMe from './components/ContactMe'
 import './App.css'
 
 function App() {
+  
 
   return (
-    // <Intro 
-    //   portfolioIntroName={"Elanchezhiyan E"} 
-    //   portfolioIntroQualifications={"MCA, BCA"}
-    //   portfolioIntroDesc={"SDE proficient in NodeJS, Java, React, HTML/CSS and more..."}>
-    // </Intro>
     <>
       <Header></Header>
       <IntroBragTextSection
@@ -23,6 +22,10 @@ function App() {
         }
       ></IntroBragTextSection>
       <DynamicAbout></DynamicAbout>
+      <TechStack></TechStack>
+      <Projects></Projects>
+      <Education></Education>
+      <ContactMe email={`elanchezhiyan2440@gmail.com`}></ContactMe>
     </>
   )
 }

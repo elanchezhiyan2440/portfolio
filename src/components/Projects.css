@@ -1,0 +1,120 @@
+#allProjects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    width: 80rem;
+    margin: 10rem auto 0 auto;
+}
+
+article.projectTile {
+    display: flex;
+    background-color: var(--project-tile-bg);
+    flex-direction: column;
+    width: 20rem;
+    height: 20rem;
+    max-width: 20rem;
+    max-height: 20rem;
+    border-radius: 25px;
+    margin: 1rem 0;
+    padding: 2rem;
+    /* transition: translateY ease-in 1.2s; */
+    transition: opacity ease-in 1s;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* background-color: red; */
+
+}
+
+article.projectTile>h1 {
+    font-size: 1.5rem;
+    overflow: visible;
+}
+
+article.projectTile>p {
+    opacity: 0.75;
+}
+
+.projectTileLine {
+    align-self: center;
+    height: 1px;
+    width: 100%;
+    background-color: var(--line-div-color);
+}
+
+.projectButtons {
+    display: flex;
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+
+.disabledButton {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.projectTileButton {
+    background-color: #70707A;
+    display: flex;
+    width: 120px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    align-self: flex-end;
+    justify-self: flex-end;
+    font-weight: bold;
+    color: black;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.projectTileButton>img {
+    height: 25px;
+    margin-right: 10px;
+    width: auto;
+}
+
+.moreProjectsTextDiv {
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.moreProjectsTextUrl {
+    /* 1. Merge both gradients into one huge gradient */
+    /* First half is your REDs, Second half is your BLUEs */
+    background: linear-gradient(
+        135deg, 
+        #ff003c 10%, #f10000 30%, #d1b31d 50%,   /* The Red State */
+        #5dccc8 60%, #0074f1 90%                 /* The Blue State */
+    );
+
+    /* 2. Stretch the background so only the RED part shows initially */
+    background-size: 250%; 
+    background-position: 0% 50%; /* Start at the left (Red) */
+
+    /* 3. Standard Text Clip Logic */
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* 4. Animate the POSITION, not the background itself */
+    transition: background-position 0.2s ease-in;
+}
+
+.moreProjectsTextUrl:hover {
+    /* 5. Slide to the right (Blue) */
+    background-position: -70% -50%;
+}
+
+/* STATE 1: Hidden (Before you scroll to it) */
+.pop-up-hidden-project {
+    opacity: 0;
+}
+
+/* STATE 2: Visible (After you scroll to it) */
+.pop-up-visible-project {
+    opacity: 1;
+}
