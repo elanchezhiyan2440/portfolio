@@ -5,10 +5,10 @@ function Header(){
         <header>
             <div className="line"></div>
             <div id='headerLinks'>
-                <a href="#">Projects</a>
+                <a href="#allProjects">Projects</a>
                 <a href="#">Resume</a>
-                <a href="#">Education</a>
-                <a href="#">Contact Me</a>
+                <a href="#EducationSection">Education</a>
+                <a href="#contactMe">Contact Me</a>
             </div>
             <div className="line"></div>
         </header>

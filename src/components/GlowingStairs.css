@@ -8,7 +8,7 @@
 .glowingStair {
     height: 3px;
     background-color: var(--line-div-color);
-    margin: 3rem 0 0 0;
+    margin: 2.5rem 0 0 0;
 
     animation: singleDarkStep 4s linear infinite;
 }
@@ -55,4 +55,14 @@
     28%       { opacity: 0.4; box-shadow: none; } 
     40%       { opacity: 0.6; box-shadow: none; } 
     80%       { opacity: 0.8; box-shadow: none; } 
+}
+
+@media screen and (max-width: 900px) {
+    .glowingStairs{
+        padding: 0 1rem;
+    }
+
+    .glowingStair{
+        margin: 2.5rem 0 0 0;
+    }
 }

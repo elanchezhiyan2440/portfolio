@@ -28,3 +28,11 @@ span.blinkingCursor{
     75% {opacity: 0;}
     100% {opacity: 0.75;}
 }
+
+@media screen and (max-width: 900px) {
+    .dynamicAboutSection{
+        padding: 15rem 1rem 15rem 1rem;
+    }
+    
+
+}

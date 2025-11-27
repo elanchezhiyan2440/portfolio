@@ -1,9 +1,9 @@
-section#EducationSection{
+section#EducationSection {
     margin-top: 10rem;
     position: relative;
 }
 
-.educationTiles{
+.educationTiles {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,11 +11,11 @@ section#EducationSection{
     margin: 3rem auto 0 auto;
 }
 
-.smallerText{
+.smallerText {
     font-size: 1.5rem;
 }
 
-#educationMiddleLine{
+#educationMiddleLine {
     margin: 12.5rem auto 0 auto;
     z-index: 0;
     position: absolute;
@@ -26,7 +26,7 @@ section#EducationSection{
     background-color: var(--line-div-color);
 }
 
-.educationBox{
+.educationBox {
     background-color: var(--education-tile-bg);
     height: 200px;
     max-height: 200px;
@@ -41,71 +41,78 @@ section#EducationSection{
     top: 10px;
 }
 
-.educationBoxLeftAlign, .educationBoxRightAlign, .educationDateLeftAlign, .educationBoxRightAlign{
+.educationBoxLeftAlign,
+.educationBoxRightAlign,
+.educationDateLeftAlign,
+.educationBoxRightAlign {
     opacity: 0;
     transition: transform 1s ease, opacity .75s ease;
 }
 
-.educationBoxLeftAlign{
+.educationBoxLeftAlign {
     left: -190px;
     top: -50px;
     transform: translateX(-100%);
 }
 
-.educationBoxRightAlign{
+.educationBoxRightAlign {
     left: 190px;
     top: -50px;
     transform: translateX(100%);
 }
 
-.educationDateRightAlign, .educationDateLeftAlign{
+.educationDateRightAlign,
+.educationDateLeftAlign {
     transition: transform 1s ease, opacity .75s ease;
 }
 
-.educationDateRightAlign{
+.educationDateRightAlign {
     transform: translateX(400%);
     opacity: 0;
     right: -100px;
     top: 42.5px;
 }
 
-.educationDateLeftAlign{
+.educationDateLeftAlign {
     transform: translateX(-400%);
     opacity: 0;
     right: 100px;
     top: 42.5px;
 }
 
-.jumpFromLeft, .jumpFromRight{
+.jumpFromLeft,
+.jumpFromRight {
     opacity: 1;
     transform: translateX(0%);
 }
 
-.eduSchoolName, .eduSchoolLocation, .eduSchoolRole{
+.eduSchoolName,
+.eduSchoolLocation,
+.eduSchoolRole {
     margin: 0;
     font-weight: bold;
 }
 
-.eduSchoolMarks{
+.eduSchoolMarks {
     font-weight: bold;
     margin: 15px 0 10px 0;
 }
 
-.eduSchoolDesc{
+.eduSchoolDesc {
     font-weight: bold;
     opacity: 0.75;
 }
 
-.educationDate{
+.educationDate {
     font-weight: bold;
     position: relative;
 }
 
-.WhiteCircle{
+.WhiteCircle {
     position: relative;
 }
 
-.WhiteCircleRing{
+.WhiteCircleRing {
     height: 25px;
     width: 25px;
     /* background-color: var(--text-color); */
@@ -114,19 +121,19 @@ section#EducationSection{
     border: 5px solid;
 }
 
-.WhiteCircle>img{
+.WhiteCircle>img {
     height: 10px;
     width: auto;
     position: absolute;
 }
 
-.leftArrowWhiteCircle{
+.leftArrowWhiteCircle {
     top: 11px;
     left: -7px;
     transform: scaleX(-1);
 }
 
-.rightArrowWhiteCircle{
+.rightArrowWhiteCircle {
     top: 11px;
     right: -7px;
 }
@@ -138,3 +145,41 @@ section#EducationSection{
 /* for text  px*/
 /* right-100 */
 /* top 40 */
+
+@media screen and (max-width:900px) {
+
+    #educationMiddleLine {
+        left: 10%;
+    }
+
+    .WhiteCircle {
+        right: 40%;
+    }
+
+    .educationDateRightAlign {
+        transform: none;
+        opacity: 0;
+        right: 70px;
+        top: 40px;
+    }
+
+    .educationDateLeftAlign {
+        transform: none;
+        opacity: 0;
+        right: 70px;
+        top: 40px;
+    }
+
+    .jumpFromLeft,
+    .jumpFromRight {
+        opacity: 1;
+        transform: none;
+    }
+
+    .educationBoxLeftAlign,
+    .educationBoxRightAlign {
+        left: 20px;
+        top: 0px;
+        transform: none;
+    }
+}

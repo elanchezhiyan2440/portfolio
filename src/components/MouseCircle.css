@@ -46,3 +46,10 @@ section.mouseHoverEffectSection > p{
     opacity: 1;
     transform: translateY(0);    /* Back to normal */
 }
+
+@media screen and (max-width: 900px) {
+    section.mouseHoverEffectSection > p{
+        font-size: 2rem;
+        padding: 1.5rem;
+    }
+}

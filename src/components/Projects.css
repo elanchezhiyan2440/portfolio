@@ -84,15 +84,17 @@ article.projectTile>p {
 .moreProjectsTextUrl {
     /* 1. Merge both gradients into one huge gradient */
     /* First half is your REDs, Second half is your BLUEs */
-    background: linear-gradient(
-        135deg, 
-        #ff003c 10%, #f10000 30%, #d1b31d 50%,   /* The Red State */
-        #5dccc8 60%, #0074f1 90%                 /* The Blue State */
-    );
+    background: linear-gradient(135deg,
+            #ff003c 10%, #f10000 30%, #d1b31d 50%,
+            /* The Red State */
+            #5dccc8 60%, #0074f1 90%
+            /* The Blue State */
+        );
 
     /* 2. Stretch the background so only the RED part shows initially */
-    background-size: 250%; 
-    background-position: 0% 50%; /* Start at the left (Red) */
+    background-size: 250%;
+    background-position: 0% 50%;
+    /* Start at the left (Red) */
 
     /* 3. Standard Text Clip Logic */
     color: transparent;
@@ -117,4 +119,17 @@ article.projectTile>p {
 /* STATE 2: Visible (After you scroll to it) */
 .pop-up-visible-project {
     opacity: 1;
+}
+
+@media screen and (max-width:900px) {
+    article.projectTile {
+        max-width: 17.5rem;
+        margin: 1rem;
+    }
+
+    #allProjects {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        margin: 10rem auto;
+    }
 }

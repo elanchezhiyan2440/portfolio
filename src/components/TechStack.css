@@ -7,7 +7,7 @@
     margin: 0 auto;
 }
 
-.techStackText{
+.techStackText {
     margin: 6rem 0 0 0;
     line-height: 1;
     overflow: visible;
@@ -44,5 +44,19 @@
 }
 
 @keyframes hideDownAndPopUp {
-    100% {transform: translateY(0%); opacity: 1;}
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width : 900px) {
+    .singleTechIcon {
+        margin: 0 1rem 1rem 1rem;
+    }
+
+    .singleTechIcon>img {
+        height: auto;
+        width: 60px;
+    }
 }

@@ -1,36 +1,64 @@
-header{
+header {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 2rem 0;
-    opacity: 0; transform: translateY(-250%);
+    opacity: 0;
+    transform: translateY(-250%);
     animation: slideInFromTop 0.5s ease-in 0.5s forwards;
     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
 }
 
-div.line{
+div.line {
     height: 1px;
     width: 250px;
     background-color: var(--line-div-color);
     margin: 0 30px;
 }
 
-div#headerLinks a{
+div#headerLinks a {
     margin: 0 1.2rem;
     font-size: 1.1rem;
     display: inline-block;
     transition: transform 0.15s ease-in-out;
 }
 
-div#headerLinks a:hover{
+div#headerLinks a:hover {
     transform: scale(1.1);
-    
+
 }
 
 @keyframes slideInFromTop {
-    0% {opacity: 0; transform: translateY(-250%);}
-    25% {opacity: 0.25; transform: translateY(-200%);}
-    70% {opacity: 0.70; transform: translateY(-100%);}
-    100% {opacity: 1; transform: translateY(0%);}
+    0% {
+        opacity: 0;
+        transform: translateY(-250%);
+    }
+
+    25% {
+        opacity: 0.25;
+        transform: translateY(-200%);
+    }
+
+    70% {
+        opacity: 0.70;
+        transform: translateY(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    div.line{
+        display: none;
+    }
+    div#headerLinks a {
+        margin: 0 0.5rem;
+        font-size: 1rem;
+        display: inline-block;
+        transition: transform 0.15s ease-in-out;
+    }
 }
