@@ -58,7 +58,7 @@ function EducationDate({ educationDate, alignment }) {
 
     const jumpDirection = alignment === "L" ? "jumpFromLeft" : "jumpFromRight";
     return (
-        <p className={`educationDate ${alignment == 'L' ? "educationDateLeftAlign" : "educationDateRightAlign"} ${isVisible?jumpDirection:""}`} ref={myRef}>{educationDate}</p>
+        <p className={`educationDate ${alignment == 'L' ? "educationDateLeftAlign" : "educationDateRightAlign"} ${isVisible ? jumpDirection : ""}`} ref={myRef}>{educationDate}</p>
     )
 }
 
@@ -83,6 +83,18 @@ function Education() {
                 </>
             }></MouseCircle>
             <div id="educationMiddleLine"></div>
+            <div className="educationTiles">
+                <EducationDate educationDate={"2025 - Present"} alignment={"R"}></EducationDate>
+                <WhiteCircle></WhiteCircle>
+                <EducationBox
+                    schoolName={"Java Programming I"}
+                    roleInSchool={"University of Helsinki"}
+                    // schoolLocation={"Chennai, India"}
+                    schoolMarks={"Score: 100%"}
+                    schoolDesc={"Mastered Java Programming syntax and concepts needed for Software Developement."}
+                    alignment={"L"}
+                ></EducationBox>
+            </div>
             <div className="educationTiles">
                 <EducationDate educationDate={"2025 - Present"} alignment={"L"}></EducationDate>
                 <WhiteCircle></WhiteCircle>
@@ -119,7 +131,7 @@ function Education() {
                     alignment={"R"}
                 ></EducationBox>
             </div>
-            <div className="educationTiles">
+            {/* <div className="educationTiles">
                 <EducationDate educationDate={"Graduated 2018"} alignment={"R"}></EducationDate>
                 <WhiteCircle></WhiteCircle>
                 <EducationBox
@@ -142,7 +154,7 @@ function Education() {
                     schoolDesc={"Graduated SSLC under Tamil Nadu state board first class."}
                     alignment={"R"}
                 ></EducationBox>
-            </div>
+            </div> */}
         </section>
     )
 }
