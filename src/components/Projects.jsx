@@ -30,7 +30,7 @@ function ProjectTile({ projectName, projectDesc, projectGithubLink, projectDemoL
         <article className={`projectTile ${isScrolledIntoView ? "pop-up-visible-project" : "pop-up-hidden-project"}`} ref={myRef}>
             <h1>{projectName}</h1>
             <div className="projectTileLine"></div>
-            <p>{projectDesc}</p>
+            <p className="projectTileDesc">{projectDesc}</p>
             <div className="projectButtons">
                 <a href={projectGithubLink}>
                     <div className="projectTileButton">
@@ -62,9 +62,9 @@ function Projects() {
         <>
             <div id="allProjects">
                 <ProjectTile
-                    projectName={"test project"}
-                    projectDesc={"A robust application powered by literal bullshit styled with more BS and a bunch of pain."}
-                    projectGithubLink={"#"}
+                    projectName={"Predictive Maintenance of PV Panels using GRU and IoT"}
+                    projectDesc={"Developed an advanced Photovoltaic maintenace system combining Deep Learning and IoT for tracking environmental impacts on panel performance to automate schedule optimization for MCA final year thesis."}
+                    projectGithubLink={"https://github.com/wraththevengeful/finaldraft-ss.git"}
                     projectDemoLink={"#"}
                     isDemoAvaialble={false}
                 ></ProjectTile>

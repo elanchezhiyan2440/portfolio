@@ -17,7 +17,7 @@ function App() {
       <IntroBragTextSection
         bragText={
           <>
-            An aspiring SDE building <span className="redText">software</span> and <span className="redText">myself</span> with every project and experience.
+            An aspiring SDE, building <span className="redText">software</span> and <span className="redText">myself</span> with every project and experience.
           </>
         }
       ></IntroBragTextSection>

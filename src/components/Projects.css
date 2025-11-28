@@ -41,6 +41,10 @@ article.projectTile>p {
     background-color: var(--line-div-color);
 }
 
+.projectTileDesc{
+    font-size: 0.85rem;
+}
+
 .projectButtons {
     display: flex;
     align-self: flex-start;
