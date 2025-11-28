@@ -1,16 +1,66 @@
-# React + Vite
+# Developer Portfolio 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive, high-performance personal portfolio website built with React and Vite. Designed to showcase projects, skills, and educational background with smooth scroll animations and an interactive UI.
 
-Currently, two official plugins are available:
+[View Live Demo](https://wraththevengeful.github.io/portfolio/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
 
-## React Compiler
+* Scroll Animations: Custom IntersectionObserver hooks for elements that slide/fade in on view.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Dynamic Content: Reusable components for Project Tiles, Education Timeline, and Tech Stack.
 
-## Expanding the ESLint configuration
+* Responsive Design: Fully optimized layouts for desktop, tablet, and mobile.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Dark Mode Compatible: CSS variables and filter-based theming logic.
+
+## Tech Stack
+
+* React.js (Vite)
+
+* CSS3 (Variables, Grid, Flexbox, Animations)
+
+* GitHub Pages (Deployment)
+
+# Installation & Usage
+
+Want to use this template for your own portfolio? Follow these steps:
+
+* Clone the repository
+
+```
+git clone https://github.com/wraththevengeful/portfolio.git
+```
+
+
+* Install dependencies
+
+```
+npm install
+```
+
+* Run locally
+
+```
+npm run dev
+```
+
+## Deployment
+
+> This project is configured for GitHub Pages.
+
+* Update the homepage in package.json to your own URL.
+
+* Update the base path in vite.config.js to match your repo name.
+
+* Deploy:
+
+```
+npm run deploy
+```
+
+# Customization
+
+* Projects: Update the projects array in src/components/Projects.jsx.
+
+* Theme: Yet to come. You hold on.

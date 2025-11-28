@@ -32,13 +32,13 @@ function ProjectTile({ projectName, projectDesc, projectGithubLink, projectDemoL
             <div className="projectTileLine"></div>
             <p className="projectTileDesc">{projectDesc}</p>
             <div className="projectButtons">
-                <a href={projectGithubLink}>
+                <a href={projectGithubLink} target="blank">
                     <div className="projectTileButton">
                         <img src={github} alt="Go to the code repo" />
                         <p>Github</p>
                     </div>
                 </a>
-                <a href={projectDemoLink} className={!isDemoAvailable ? "disabledButton" : "enabledButton"}>
+                <a href={projectDemoLink} className={isDemoAvailable ? "enabledButton" : "disabledButton"} target="blank">
                     <div className="projectTileButton">
                         <img src={webicon} alt="Visit the web" />
                         <p>Demo</p>
@@ -66,42 +66,42 @@ function Projects() {
                     projectDesc={"Developed an advanced Photovoltaic maintenace system combining Deep Learning and IoT for tracking environmental impacts on panel performance to automate schedule optimization for MCA final year thesis."}
                     projectGithubLink={"https://github.com/wraththevengeful/finaldraft-ss.git"}
                     projectDemoLink={"#"}
-                    isDemoAvaialble={false}
+                    isDemoAvailable={false}
                 ></ProjectTile>
                 <ProjectTile
-                    projectName={"test project"}
-                    projectDesc={"A robust application powered by literal bullshit styled with more BS and a bunch of pain."}
-                    projectGithubLink={"#"}
-                    projectDemoLink={"#"}
-                    isDemoAvaialble={false}
+                    projectName={"ResuMe"}
+                    projectDesc={"Built a responsive resume generator using React and Vite. Implemented complex state management to handle nested objects for education/experience arrays, utilizing controlled components for immediate UI updates."}
+                    projectGithubLink={"https://wraththevengeful.github.io/CV-Application/"}
+                    projectDemoLink={"https://wraththevengeful.github.io/CV-Application/"}
+                    isDemoAvailable={true}
                 ></ProjectTile>
                 <ProjectTile
-                    projectName={"Test project to check if overflow works"}
-                    projectDesc={"A robust application powered by literal bullshit styled with more BS and a bunch of pain."}
-                    projectGithubLink={"#"}
-                    projectDemoLink={"#"}
-                    isDemoAvaialble={false}
+                    projectName={"Etch a Sketch"}
+                    projectDesc={`An interactive browser-based sketchpad built with vanilla JavaScript. Utilizes DOM manipulation for dynamic grid generation and efficient event listeners to implement "hover-to-draw" functionality with adjustable resolution.`}
+                    projectGithubLink={"https://github.com/wraththevengeful/etch-a-sketch"}
+                    projectDemoLink={"https://wraththevengeful.github.io/etch-a-sketch/"}
+                    isDemoAvailable={true}
                 ></ProjectTile>
                 <ProjectTile
-                    projectName={"test project"}
-                    projectDesc={"A robust application powered by literal bullshit styled with more BS and a bunch of pain."}
-                    projectGithubLink={"#"}
+                    projectName={"My personal Scripts"}
+                    projectDesc={"Scripts I write to wield the internet to my liking when things don't work as I expected like download WhatsApp Stickers and putting them to Signal Messengers."}
+                    projectGithubLink={"https://github.com/wraththevengeful/scripts"}
                     projectDemoLink={"#"}
-                    isDemoAvaialble={false}
+                    isDemoAvailable={false}
                 ></ProjectTile>
                 <ProjectTile
-                    projectName={"test project"}
-                    projectDesc={"A robust application powered by literal bullshit styled with more BS and a bunch of pain."}
-                    projectGithubLink={"#"}
-                    projectDemoLink={"#"}
-                    isDemoAvaialble={false}
+                    projectName={"Calculator"}
+                    projectDesc={"The very first UI I ever developed. It ain't much but it's honest work and nostalgia. Learnt first ever JS and CSS and HTML with this. Developed multiple branches to also learn the intricacies of Git and Github Pages."}
+                    projectGithubLink={"https://github.com/wraththevengeful/calculator"}
+                    projectDemoLink={"https://wraththevengeful.github.io/calculator/"}
+                    isDemoAvailable={true}
                 ></ProjectTile>
                 <ProjectTile
-                    projectName={"test project"}
-                    projectDesc={"A robust application powered by literal bullshit styled with more BS and a bunch of pain."}
-                    projectGithubLink={"#"}
-                    projectDemoLink={"#"}
-                    isDemoAvaialble={false}
+                    projectName={"Developer Portfolio"}
+                    projectDesc={"A responsive, high-performance personal portfolio website built with React and Vite. Designed to showcase projects, skills, and educational background with smooth scroll animations and an interactive UI."}
+                    projectGithubLink={"https://github.com/wraththevengeful/portfolio"}
+                    projectDemoLink={"https://wraththevengeful.github.io/portfolio/"}
+                    isDemoAvailable={true}
                 ></ProjectTile>
             </div>
             <MoreProjectsText githubUrl={"#"}></MoreProjectsText>
