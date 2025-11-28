@@ -63,7 +63,7 @@ function Projects() {
             <div id="allProjects">
                 <ProjectTile
                     projectName={"Predictive Maintenance of PV Panels using GRU and IoT"}
-                    projectDesc={"Developed an advanced Photovoltaic maintenace system combining Deep Learning and IoT for tracking environmental impacts on panel performance to automate schedule optimization for MCA final year thesis."}
+                    projectDesc={"Engineered a predictive PV maintenance system using Deep Learning and IoT for MCA final year thesis."}
                     projectGithubLink={"https://github.com/wraththevengeful/finaldraft-ss.git"}
                     projectDemoLink={"#"}
                     isDemoAvailable={false}
