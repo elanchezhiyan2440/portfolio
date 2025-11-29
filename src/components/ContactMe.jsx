@@ -43,7 +43,7 @@ function FinalContacts({ yourName, linkedInURL, leetcodeURL }) {
 function ContactMe({ email }) {
     return (
         <section id="contactMe">
-            <MouseCircle textcontent={`Lets work together.`}></MouseCircle>
+            <MouseCircle textcontent={`Let's work together.`}></MouseCircle>
             <p id="contactMeEmail">{email}</p>
             <a href={`mailto:${email}`} target="blank">
                 <GradientButton text={"Contact Me"}></GradientButton>
