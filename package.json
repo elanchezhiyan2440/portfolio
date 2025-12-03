@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/wraththevengeful/portfolio",
+  "homepage": "https://github.com/elanchezhiyan2440/portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
